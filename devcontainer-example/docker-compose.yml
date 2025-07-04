@@ -42,11 +42,11 @@ services:
 
   redis-queue:
     image: docker.io/redis:alpine
-    platform: linux/amd64
+    platform: linux/arm64
 
   frappe:
     image: docker.io/frappe/bench:latest
-    platform: linux/amd64
+    platform: linux/arm64
     command: sleep infinity
     environment:
       - SHELL=/bin/bash
